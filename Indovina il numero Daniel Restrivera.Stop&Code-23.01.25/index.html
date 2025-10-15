@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indovina il numero js avanzato</title>
+
+    <link rel="stylesheet" href="indovinaNumero.css">
+
+    <script src="indovinaNumero.js" defer></script>
+</head>
+<body>
+
+
+<!--Contenitore del gioco-->
+    <div class="box">
+
+        <h1>INDOVINA UN NUMERO DA 1 A 100</h1>
+
+        <div class="inputBox">
+
+    <input type="text" name="tentativi" id="tentativi" placeholder="Inserisci i tentativi" >
+    <span class="blocca"></span>
+    
+<!--Lo span blocca serve per bloccare input e bottone "Indovina"-->
+    <input type="text" name="indovinaNumero" id="indovinaNumero" placeholder="Inserisci il numero">
+    <span class="blocca"></span>
+
+
+<!--Questo span è nascosto, viene incrementato di 1 ogni volta che si clicca il tasto "Indovina, in modo tale da essere associato al numero di tentativi inseriti"-->
+    <span id="numeroTentativi"></span>
+   
+</div>
+    
+
+
+
+<div class="buttons">
+
+    <div id="indovinaBtn">
+    <button>Indovina</button>
+    <span class="blocca"></span>
+    </div>
+    
+    <button>Nuova Partita</button>
+
+
+</div>
+
+    </div>
+
+
+<!--Div che compare per i messaggi di: vincita, partita persa, immissione dati errata e dei suggerimenti-->
+<div id="risultato"><p>NUMERO INDOVINATO</p></div>
+    
+    
+</body>
+</html>
